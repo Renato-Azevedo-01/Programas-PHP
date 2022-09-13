@@ -9,7 +9,7 @@
 		:root{
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 			letter-spacing: 3px;
-			font-style: italic;
+			font-style: bold;
 		}
 		body{
 			background:black;
