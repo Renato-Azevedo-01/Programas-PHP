@@ -1,2 +1,2 @@
-# Programas-PHP
-Programas testando funcionalidades do PHP
+# Programas PHP
+ Programas testando as funcionalidades do PHP
