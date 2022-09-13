@@ -5,6 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PHP Reload</title>
+	<?php
+		$sexo = $_POST["sexo"];
+		$cor = $_POST["cor"];
+		$nome = $_POST["nome"];
+		$ano =  $_POST["ano"];
+		$idade = date("Y") - $ano;
+	 ?>
 	<style>
 		:root{
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,6 +40,9 @@
 			margin-bottom:15px;
 			border-radius: 10px 10px 0px 0px;
 		}
+		h1.cor{
+			color:<?php echo $cor ?>;
+		}
 		
 		
 	</style>
@@ -44,11 +54,7 @@
 			<div>
 					<h1 id="titulo">Recebendo Valores - PHP</h1>
 			</div>
-			<?php
-
-			$nome = $_POST["nome"];
-			$ano =  $_POST["ano"];
-			$idade = date("Y") - $ano;
+			<?php			
 			echo "O nome recebido foi: $nome ! <br>";
 			echo "Ano de nascimento: $ano <br>";
 			echo "Você tem : $idade anos <br>";
@@ -61,8 +67,7 @@
 			
 			$num1 = $_POST["n1"];
 			$num2 = $_POST["n2"];
-			$sexo = $_POST["sexo"];
-			$cor = $_POST["cor"];
+			
 			
 			if ($num1 == '' ){
 				$num1 = 1;
@@ -72,12 +77,12 @@
 			}
 			soma($num1,$num2);
 			#echo "<br>A soma dos números $num1 + $num2 = $soma";
-			echo "<br><h2 class = 'cor'>O Sexo é : $sexo</h2>";
+			echo "<br><h1 class = 'cor'>O Sexo é : $sexo</h1>";
 			
 			?>
 		
 
-		<a href='http://localhost/programas_php/index.php'>Retornar</a>;
+		<a href='http://localhost/programas_php/programas-php/index.php'>Retornar</a>;
 		</div>
 	</div>
 

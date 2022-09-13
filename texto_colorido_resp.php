@@ -6,17 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Texto Colorido</title>
 	<link rel="stylesheet" href="style.css">
-	
-</head>
-<body>
-	
-	
 	<?php
 			$nome = $_POST["nome"];
 			$tamanho = $_POST["tamanho"];
-			$cor = $_POST["cor"];			
-			
-		?>
+			$cor = $_POST["cor"];
+	?>
 
 	<style>
 		p.resultado{
@@ -24,6 +18,10 @@
 				font-size: <?php echo $tamanho ?>;
 			}
 	</style>
+	
+</head>
+<body>
+	
 	
 	<div>
 		<h1>Resposta do Texto Colorido</h1>
